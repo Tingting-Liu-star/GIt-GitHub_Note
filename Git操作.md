@@ -227,7 +227,7 @@ git clone  远程地址
 ```
 pull = fetch + merge
 	git fetch 别名 分支名
-	git merge 别名 分支名
+	git merge 别名/分支名
 git pull 别名 分支名
 ```
 
