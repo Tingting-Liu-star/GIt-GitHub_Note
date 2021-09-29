@@ -303,7 +303,15 @@ git clone -b v0.1 地址   #指定tag下载代码
 - 进入`.ssh`目录，复制`id_rsa.pub`文件内容
 - 登录GitHub。`Settings`  --> `SSH and GPG keys ` --> `New SSH Key    `
 - 回到git通过ssh地址创建。`git remote add 别名 SSH地址  `
-
+cd~
+rm -rvf.ssh
+ssh3-keygen -t rsa -C 10432227281@qq.com
+cd .ssh
+cat id_rsa.pub#复制，回github，settings-->ssh and gpg keys -->new ssh key --->粘贴
+git clone git@github.com:Tingting-Liu-star/OpenHGNN.git
+git remote add openhgnn git@github.com:Tingting-Liu-star/OpenHGNN.git
+git remote -v
+git push openhgnn main
 ## Git工作流
 
 #### 1.1 概念
